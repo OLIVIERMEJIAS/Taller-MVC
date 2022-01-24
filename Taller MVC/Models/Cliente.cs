@@ -27,6 +27,7 @@ namespace Taller_MVC.Models
         public string Ape1 { get; set; }
 
         [StringLength(50)]
+        [Display(Name ="Segundo Apellido")]
         public string Ape2 { get; set; }
 
         public ICollection<Consulta> Consultas { get; set; }

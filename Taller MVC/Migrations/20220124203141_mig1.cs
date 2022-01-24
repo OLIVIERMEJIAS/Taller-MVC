@@ -15,7 +15,7 @@ namespace Taller_MVC.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Cedula = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Ape1 = table.Column<string>(type: "nvarchar(50)", maxLength: 50,nullable: false),
+                    Ape1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Ape2 = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>

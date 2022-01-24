@@ -10,8 +10,8 @@ using Taller_MVC.Data;
 namespace Taller_MVC.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220122000740_mig1")]
-    partial class mig1
+    [Migration("20220124204019_mg777")]
+    partial class mg777
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,7 +48,7 @@ namespace Taller_MVC.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cliente");
+                    b.ToTable("Clientes");
                 });
 
             modelBuilder.Entity("Taller_MVC.Models.Consulta", b =>
@@ -73,7 +73,7 @@ namespace Taller_MVC.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Consulta");
+                    b.ToTable("Consultas");
                 });
 
             modelBuilder.Entity("Taller_MVC.Models.Consulta", b =>

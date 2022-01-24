@@ -19,11 +19,16 @@ namespace Taller_MVC.Data
 
 
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Cliente>()
+            //.ToTable("Clientes"); 
+            //modelBuilder.Entity<Consulta>()
+            // .ToTable("Consultas");
+            //modelBuilder.Entity<Consulta>().
+            //    Property(b => b.FechaConsulta).HasDefaultValueSql("getdate()");
+        }
 
     }
 }
